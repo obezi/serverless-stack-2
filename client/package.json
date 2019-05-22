@@ -15,12 +15,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start-prod": "cross-env REACT_APP_STAGE=prod npm start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "predeploy": "npm run build",
-    "deploy": "aws s3 sync build/ s3://notes-app-client-ob --delete",
-    "postdeploy": "aws cloudfront create-invalidation --distribution-id EF1TXVHW560RN --paths \"/*\"",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
