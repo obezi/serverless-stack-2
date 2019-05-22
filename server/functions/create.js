@@ -3,6 +3,8 @@ import { failure, success } from "../libs/response-lib";
 import * as dynamoDbLib from "../libs/dynamodb-lib";
 
 export async function main(event, context, callback) {
+  gibberish.what;
+
   // Request body is passed in as a JSON encoded string in 'event.body'
   const data = JSON.parse(event.body);
 
