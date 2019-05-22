@@ -1,6 +1,6 @@
 import uuid from "uuid";
-import { failure, success } from "./libs/response-lib";
-import * as dynamoDbLib from "./libs/dynamodb-lib";
+import { failure, success } from "../libs/response-lib";
+import * as dynamoDbLib from "../libs/dynamodb-lib";
 
 export async function main(event, context, callback) {
   // Request body is passed in as a JSON encoded string in 'event.body'
